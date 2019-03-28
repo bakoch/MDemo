@@ -27,6 +27,7 @@ export default function hookDemo(props) {
 
     return (
         <div>
+            <h1>hook</h1>
             <Players name={player1.value} handleChange={player1.onChange} />
             <Players name={player2.value} handleChange={player2.onChange} />
             <Sports handleChange={sport.onChange} checked={sport.value} />

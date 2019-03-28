@@ -5,12 +5,15 @@ import ClassDemo from './class/ClassDemo'
 import HookDemo from './hook/HookDemo'
 
 class App extends Component {
+
   render() {
+    const hook = window.location.href;
     return (
       <div className="App">
+      {!hook.includes('/?h') ? 
        <ClassDemo/>
-       <h1>Hooks</h1>
-       <HookDemo/>
+       :
+       <HookDemo/>}
       </div>
     );
   }
