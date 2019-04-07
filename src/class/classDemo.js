@@ -56,7 +56,7 @@ export default class ClassDemo extends Component {
           checked={this.state.sport}
         />
         <hr />
-        {this.state.player1 !== "" && this.state.player2 !== "" ? (
+        {this.state.player1 !== "" || this.state.player2 !== "" ? (
           <Row player1={this.state.player1} player2={this.state.player2} />
         ) : (
           <div />
