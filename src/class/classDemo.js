@@ -7,8 +7,8 @@ export default class ClassDemo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      player1: "player 1",
-      player2: "player 2",
+      player1: "",
+      player2: "",
       sport: "PES"
     };
   }
@@ -40,11 +40,13 @@ export default class ClassDemo extends Component {
       <div className="home-container">
         <h1>Class Demo</h1>
         <Players
+          placeholder={"Player1"}
           label={"Player 1: "}
           name={this.state.player1}
           handleChange={this.handleplayer1NameChange}
         />
         <Players
+          placeholder={"Player2"}
           label={"Player 2: "}
           name={this.state.player2}
           handleChange={this.handleplayer2NameChange}
@@ -54,7 +56,11 @@ export default class ClassDemo extends Component {
           checked={this.state.sport}
         />
         <hr />
-        <Row player1={this.state.player1} player2={this.state.player2} />
+        {this.state.player1 !== "" && this.state.player2 !== "" ? (
+          <Row player1={this.state.player1} player2={this.state.player2} />
+        ) : (
+          <div />
+        )}
       </div>
     );
   }
