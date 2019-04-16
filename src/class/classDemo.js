@@ -4,14 +4,11 @@ import Sports from "../components/Sports";
 import Row from "../components/Row";
 
 export default class ClassDemo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      player1: "",
-      player2: "",
-      sport: "PES"
-    };
-  }
+  state = {
+    player1: "",
+    player2: "",
+    sport: "PES"
+  };
 
   componentDidMount() {
     document.title = "Sport: " + this.state.sport;

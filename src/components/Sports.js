@@ -17,33 +17,33 @@ const Sports = props => {
           />
         </div>
         <div className="sport-holder">
-          <label>Stoni Fudbal: </label>
+          <label>Table Football: </label>
           <input
             type="radio"
-            value="Stoni Fudbal"
-            name="Stoni Fudbal"
+            value="Table Football"
+            name="Table Football"
             onChange={props.handleChange}
-            checked={props.checked === "Stoni Fudbal"}
+            checked={props.checked === "Table Football"}
           />
         </div>
         <div className="sport-holder">
-          <label>Bilijar: </label>
+          <label>Biliard: </label>
           <input
             type="radio"
-            value="Bilijar"
-            name="Bilijar"
+            value="Biliard"
+            name="Biliard"
             onChange={props.handleChange}
-            checked={props.checked === "Bilijar"}
+            checked={props.checked === "Biliard"}
           />
         </div>
         <div className="sport-holder">
-          <label>Pikado: </label>
+          <label>Darts: </label>
           <input
             type="radio"
-            value="Pikado"
-            name="Pikado"
+            value="Darts"
+            name="Darts"
             onChange={props.handleChange}
-            checked={props.checked === "Pikado"}
+            checked={props.checked === "Darts"}
           />
         </div>
       </div>
