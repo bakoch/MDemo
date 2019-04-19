@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ClassDemo from './class/ClassDemo'
-import HookDemo from './hook/HookDemo'
+import HookDemo from './hook/Hook'
 
 class App extends Component {
 
